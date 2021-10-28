@@ -23,6 +23,22 @@ body {
   border-radius: 10px;
   border: 3px solid white
 }
+@media screen and (max-width:768px){
+  .todo-list{
+    max-width: 100%;
+    min-height: 450px;
+  }
+}
+@media screen and (max-width:450px){
+  .app{
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .todo-list{
+    min-width: unset;
+  }
+}
 
 .title {
   border-bottom: 1px solid white;
@@ -35,6 +51,12 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width:468px){
+  .form{
+    flex-direction: column;
+  }
+}
+
 .form-input, .form-button {
   border-radius: 0;
   padding: 0.75rem;
@@ -51,7 +73,11 @@ body {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 0.25rem;
+}
+@media screen and (min-width: 468px) {
+  .form-button{
+    margin-left: 0.25rem;
+  }
 }
 .form-button:hover {
   color: #F6F1D1;
@@ -68,6 +94,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 0.5rem;
   padding: 1rem 2rem 1rem 1rem;
 }
@@ -80,6 +107,7 @@ body {
   outline: none;
   border-radius: 2px;
   cursor: pointer;
+  padding: 5px 3px;
 }
 .check-button{
   background-color: #46494C;
