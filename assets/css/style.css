@@ -8,79 +8,27 @@ body {
   justify-content: center;
   width: 100vw;
   min-height: 100vh;
+  background-color: #333;
+  background-image: url('https://img.freepik.com/vetores-gratis/fundo-abstrato-colorido_23-2148807053.jpg?size=626&ext=jpg');
+  background-size: cover;
+  
 }
 
 .todo-list {
-  background-color: #0B2027;
+  background-color: #11151C;
   font-family: "Space Mono", monospace;
   padding: 1rem;
   min-width: 400px;
   min-height: 300px;
+  border-radius: 10px;
+  border: 3px solid white
 }
 
 .title {
-  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  border-bottom: 1px solid white;
   font-size: 1.5rem;
   font-family: "BioRhyme", serif;
-  color: #F6F1D1;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-}
-
-.form-input,
-.form-button {
-  border-radius: 0;
-  padding: 0.75rem;
-  font-size: 0.75rem;
-}
-
-.form-input {
-  outline: none;
-  background-color: #F6F1D1;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.form-button {
-  border: 1px;
-  background: #F6F1D1;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-left: 0.25rem;
-}
-
-.form-button:hover {
-  color: #F6F1D1;
-  background: rgba(246, 241, 209, 0.1);
-}
-
-body {
-  margin: 0;
-}
-
-.app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.todo-list {
-  background-color: #0B2027;
-  font-family: "Space Mono", monospace;
-  padding: 1rem;
-  min-width: 400px;
-  min-height: 300px;
-}
-
-.title {
-  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
-  font-size: 1.5rem;
-  font-family: "BioRhyme", serif;
-  color: #F6F1D1;
+  color: white;
 }
 
 .form {
@@ -94,19 +42,20 @@ body {
 }
 .form-input {
   outline: none;
-  background-color: #F6F1D1;
+  background-color: white;
   border-color: rgba(255, 255, 255, 0.1);
 }
 .form-button {
   border: 1px;
-  background: #F6F1D1;
+  background: #1a2892;
+  color: white;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.25rem;
 }
 .form-button:hover {
   color: #F6F1D1;
-  background: rgba(246, 241, 209, 0.1);
+  background: #2134c5;
 }
 
 .list {
@@ -116,26 +65,32 @@ body {
 }
 
 .task {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #F6F1D1;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 .check-button, .delete-button {
-  background-color: #F6F1D1;
+  color: white;
+  font-weight: bold;
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   outline: none;
   border-radius: 2px;
   cursor: pointer;
 }
+.check-button{
+  background-color: #46494C;
+}
+.delete-button{
+  background-color: #ec387a;
+  
+}
 
 .task.done .check-button {
-  background-color: #46494C;
-  color: #F6F1D1;
+  background-color: rgb(32, 204, 32);
 }
 
 .check-icon {
@@ -147,20 +102,17 @@ body {
   border-radius: 50%;
 }
 
-.task.done .check-icon {
-  background-color: #0B2027;
-}
 
 .content {
   margin: 0;
 }
 
 .content-data { 
-  color: #F6F1D1;
+  color: white;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem;
 }
 
 .task.done .content {

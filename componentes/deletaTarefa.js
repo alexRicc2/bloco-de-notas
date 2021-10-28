@@ -8,7 +8,8 @@ const deletarTarefa = (atualiza, id) => {
 
 const BotaoDeleta = (atualiza, id) => { 
     const botaoDeleta = document.createElement('button')
-
+    
+    botaoDeleta.classList.add('delete-button')
     botaoDeleta.innerText = 'deletar'
     botaoDeleta.addEventListener('click', ()=> deletarTarefa(atualiza, id))
 
